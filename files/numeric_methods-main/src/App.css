@@ -1,0 +1,103 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 600px;
+  margin-top: 50px;
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-between;
+}
+
+math-field {
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 1.5em;
+  border-radius: 8px;
+  border: 1px solid #999;
+  width: 100%;
+  max-width: 600px;
+}
+
+math-field:focus {
+  outline-color: cornflowerblue;
+}
+
+#Navbar {
+  padding: 20px 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  max-width: 1000px;
+  background-color: rgba(237, 237, 237, 0.7);
+  border-radius: 0 0 20px 20px;
+}
+
+#navbarContent {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbarContent > button > svg {
+  width: 100%;
+  height: 100%;
+}
+
+#puntoFijoEquations {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+}
+
+#puntoFijoEquations > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid hsl(var(--nextui-primary));
+  border-radius: 0 8px 8px 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: hsl(var(--nextui-primary));
+}
+
+#puntoFijoEquations > button.active {
+  background-color: hsl(var(--nextui-primary));
+  color: white;
+}
+
+#puntoFijoEquations > button:hover {
+  background-color: hsl(var(--nextui-primary));
+  color: white;
+}
+
+#puntoFijoEquations > button > svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .xDivider {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  .inputs {
+    width: 90%;
+  }
+
+  #logo {
+    display: none;
+  }
+}
